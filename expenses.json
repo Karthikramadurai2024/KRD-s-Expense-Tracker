@@ -819,7 +819,7 @@
     "id": 1784907820147.671,
     "description": "Kowsa",
     "amount": 60,
-    "method": "gpay",
+    "method": "cash",
     "done": false,
     "created_at": "2026-07-24T15:43:40.147Z"
   }
