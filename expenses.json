@@ -838,5 +838,13 @@
     "method": "gpay",
     "done": false,
     "created_at": "2026-07-25T07:35:55.352Z"
+  },
+  {
+    "id": 1784987051015.1484,
+    "description": "Maavu",
+    "amount": 30,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-07-25T13:44:11.014Z"
   }
 ]
