@@ -868,7 +868,7 @@
     "description": "Mutton",
     "amount": 400,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-07-26T04:19:00.075Z"
   },
   {
