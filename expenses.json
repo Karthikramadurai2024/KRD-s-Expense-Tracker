@@ -844,7 +844,7 @@
     "description": "Maavu",
     "amount": 30,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-07-25T13:44:11.014Z"
   },
   {
