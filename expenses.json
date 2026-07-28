@@ -950,5 +950,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-07-28T13:13:09.893Z"
+  },
+  {
+    "id": 1785244473172.3396,
+    "description": "Chips",
+    "amount": 45,
+    "method": "gpay",
+    "done": false,
+    "created_at": "2026-07-28T13:14:33.172Z"
   }
 ]
