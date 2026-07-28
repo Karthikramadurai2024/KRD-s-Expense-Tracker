@@ -916,7 +916,7 @@
     "description": "Shacks",
     "amount": 30,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-07-27T12:46:46.209Z"
   },
   {
