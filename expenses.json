@@ -988,7 +988,7 @@
     "description": "SPIDERMAN",
     "amount": 640,
     "method": "gpay",
-    "done": false,
+    "done": true,
     "created_at": "2026-07-29T12:15:14.686Z"
   },
   {
