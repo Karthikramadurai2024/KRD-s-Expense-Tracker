@@ -1046,5 +1046,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-07-31T04:44:56.705Z"
+  },
+  {
+    "id": 1785482011255.8381,
+    "description": "Miki",
+    "amount": 10,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-07-31T07:13:31.254Z"
   }
 ]
