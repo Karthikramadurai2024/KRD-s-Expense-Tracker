@@ -1038,5 +1038,13 @@
     "method": "gpay",
     "done": false,
     "created_at": "2026-07-30T14:49:16.502Z"
+  },
+  {
+    "id": 1785473096724.6313,
+    "description": "Dosq",
+    "amount": 30,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-07-31T04:44:56.705Z"
   }
 ]
