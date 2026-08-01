@@ -1036,7 +1036,7 @@
     "description": "Ice",
     "amount": 90,
     "method": "gpay",
-    "done": false,
+    "done": true,
     "created_at": "2026-07-30T14:49:16.502Z"
   },
   {
