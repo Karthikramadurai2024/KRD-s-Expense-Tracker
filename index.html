@@ -4,29 +4,27 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 <title>KRD's Expense Tracker</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #050a18;
+  --bg: #1a0f05;
   --surface: rgba(255,255,255,0.06);
   --surface2: rgba(255,255,255,0.10);
-  --glass: rgba(15,30,80,0.45);
-  --glass2: rgba(20,40,100,0.55);
-  --border: rgba(100,160,255,0.20);
-  --border2: rgba(120,180,255,0.35);
-  --text: #e8f0ff;
-  --text2: #9ab4e8;
-  --muted: #5572a0;
-  --accent: #4fa3ff;
-  --accent2: #1a6fff;
-  --blue-glow: rgba(79,163,255,0.28);
-  --blue-glow2: rgba(79,163,255,0.14);
-  --green: #5aefc0;
-  --green2: #0ea572;
-  --red: #ff6b8a;
+  --glass: rgba(120,60,10,0.45);
+  --glass2: rgba(140,70,15,0.55);
+  --border: rgba(255,178,71,0.20);
+  --border2: rgba(255,193,102,0.35);
+  --text: #fff3e0;
+  --text2: #ffcc80;
+  --muted: #b8895a;
+  --accent: #ff9d3d;
+  --accent2: #ff6f00;
+  --blue-glow: rgba(255,157,61,0.28);
+  --blue-glow2: rgba(255,157,61,0.14);
+  --green: #8bc34a;
+  --green2: #558b2f;
+  --red: #ff5252;
   --cash: #ffd166;
-  --gpay: #818cf8;
+  --gpay: #ff7043;
   --r: 18px;
   --rs: 12px;
 }
@@ -39,7 +37,7 @@ html, body {
 }
 
 body {
-  font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+  font-family: Arial, Helvetica, sans-serif;
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
@@ -52,9 +50,9 @@ body::before {
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(ellipse 70% 50% at 10% -10%, rgba(30,80,220,0.35) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 45% at 90% 100%, rgba(100,60,255,0.25) 0%, transparent 55%),
-    radial-gradient(ellipse 50% 40% at 50% 50%, rgba(10,40,140,0.18) 0%, transparent 70%);
+    radial-gradient(ellipse 70% 50% at 10% -10%, rgba(255,140,0,0.35) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 45% at 90% 100%, rgba(255,111,0,0.25) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 40% at 50% 50%, rgba(255,193,7,0.18) 0%, transparent 70%);
   z-index: 0;
   pointer-events: none;
 }
@@ -63,7 +61,7 @@ body::after {
   content: '';
   position: fixed;
   inset: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234fa3ff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ff9d3d' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   z-index: 0;
   pointer-events: none;
 }
@@ -83,7 +81,7 @@ body::after {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: linear-gradient(to bottom, rgba(5,10,24,0.97) 75%, rgba(5,10,24,0.0));
+  background: linear-gradient(to bottom, rgba(26,15,5,0.97) 75%, rgba(26,15,5,0.0));
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
 }
@@ -104,21 +102,21 @@ body::after {
 .logo-dot {
   width: 38px;
   height: 38px;
-  background: linear-gradient(135deg, #4fa3ff, #7c3aed);
+  background: linear-gradient(135deg, #ff9d3d, #ff6f00);
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 19px;
   flex-shrink: 0;
-  box-shadow: 0 6px 24px rgba(79,163,255,0.45), 0 0 0 1px rgba(255,255,255,0.10);
+  box-shadow: 0 6px 24px rgba(255,157,61,0.45), 0 0 0 1px rgba(255,255,255,0.10);
 }
 
 .app-name {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.2px;
-  background: linear-gradient(90deg, #e8f0ff 0%, #4fa3ff 60%, #818cf8 100%);
+  background: linear-gradient(90deg, #fff3e0 0%, #ff9d3d 60%, #ff7043 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -174,12 +172,12 @@ body::after {
 .sum-value {
   font-size: 18px;
   font-weight: 700;
-  font-family: 'DM Mono', monospace;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.sum-value.total { color: var(--accent); text-shadow: 0 0 16px rgba(79,163,255,0.5); }
+.sum-value.total { color: var(--accent); text-shadow: 0 0 16px rgba(255,157,61,0.5); }
 .sum-value.cash-val { color: var(--cash); text-shadow: 0 0 14px rgba(255,209,102,0.4); }
-.sum-value.gpay-val { color: var(--gpay); text-shadow: 0 0 14px rgba(129,140,248,0.4); }
+.sum-value.gpay-val { color: var(--gpay); text-shadow: 0 0 14px rgba(255,112,67,0.4); }
 
 /* ── ADD CARD ── */
 .add-card {
@@ -191,10 +189,10 @@ body::after {
   backdrop-filter: blur(32px);
   -webkit-backdrop-filter: blur(32px);
   box-shadow:
-    0 16px 48px rgba(0,0,30,0.5),
+    0 16px 48px rgba(20,10,0,0.5),
     0 0 0 1px rgba(255,255,255,0.06) inset,
     0 1px 0 rgba(255,255,255,0.12) inset,
-    0 0 60px rgba(79,163,255,0.08);
+    0 0 60px rgba(255,157,61,0.08);
 }
 
 .add-card-header {
@@ -236,7 +234,7 @@ body::after {
   border-radius: var(--rs);
   color: var(--text);
   font-size: 15px;
-  font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
   -webkit-appearance: none;
@@ -245,24 +243,24 @@ body::after {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow:
-    0 4px 16px rgba(0,0,20,0.25),
+    0 4px 16px rgba(15,8,0,0.25),
     inset 0 1px 0 rgba(255,255,255,0.10),
-    inset 0 0 0 1px rgba(100,160,255,0.06);
+    inset 0 0 0 1px rgba(255,178,71,0.06);
 }
 
 .field-input::placeholder { color: var(--muted); }
 
 .field-input:focus {
   border-color: var(--accent);
-  background: rgba(79,163,255,0.09);
+  background: rgba(255,157,61,0.09);
   box-shadow:
-    0 0 0 3px rgba(79,163,255,0.18),
-    0 4px 20px rgba(0,0,30,0.3),
+    0 0 0 3px rgba(255,157,61,0.18),
+    0 4px 20px rgba(20,10,0,0.3),
     inset 0 1px 0 rgba(255,255,255,0.12);
 }
 
 .amount-input {
-  font-family: 'DM Mono', monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
   font-weight: 500;
   letter-spacing: -0.5px;
@@ -285,7 +283,7 @@ body::after {
   height: 54px;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 4px 16px rgba(0,0,20,0.25), inset 0 1px 0 rgba(255,255,255,0.08);
+  box-shadow: 0 4px 16px rgba(15,8,0,0.25), inset 0 1px 0 rgba(255,255,255,0.08);
 }
 
 .pay-toggle input[type="radio"] {
@@ -333,7 +331,7 @@ body::after {
 #payGpay:checked ~ .pay-toggle::before,
 .pay-toggle[data-pay="gpay"]::before {
   transform: translateX(100%);
-  background: linear-gradient(135deg, #818cf8, #6366f1);
+  background: linear-gradient(135deg, #ff7043, #ff5722);
 }
 
 #payCash:checked ~ label[for="payCash"],
@@ -372,12 +370,12 @@ label[for="payGpay"].active { color: #fff; }
 .add-btn {
   width: 100%;
   padding: 16px;
-  background: linear-gradient(135deg, #4fa3ff 0%, #1a6fff 50%, #6366f1 100%);
+  background: linear-gradient(135deg, #ff9d3d 0%, #ff6f00 50%, #ff5722 100%);
   color: #fff;
   border: none;
   border-radius: var(--rs);
   font-size: 15px;
-  font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   cursor: pointer;
   letter-spacing: 0.5px;
@@ -387,14 +385,14 @@ label[for="payGpay"].active { color: #fff; }
   justify-content: center;
   gap: 8px;
   box-shadow:
-    0 8px 32px rgba(79,163,255,0.40),
+    0 8px 32px rgba(255,157,61,0.40),
     0 2px 8px rgba(0,0,0,0.3),
     inset 0 1px 0 rgba(255,255,255,0.20);
 }
 
 .add-btn:active {
   transform: scale(0.97);
-  box-shadow: 0 4px 16px rgba(79,163,255,0.25);
+  box-shadow: 0 4px 16px rgba(255,157,61,0.25);
 }
 
 /* ── LIST ── */
@@ -423,11 +421,11 @@ label[for="payGpay"].active { color: #fff; }
   background: var(--glass);
   padding: 4px 12px;
   border-radius: 99px;
-  font-family: 'DM Mono', monospace;
+  font-family: Arial, Helvetica, sans-serif;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--border2);
-  box-shadow: 0 2px 10px rgba(0,0,20,0.2);
+  box-shadow: 0 2px 10px rgba(15,8,0,0.2);
 }
 
 .expense-list {
@@ -450,22 +448,22 @@ label[for="payGpay"].active { color: #fff; }
   backdrop-filter: blur(28px);
   -webkit-backdrop-filter: blur(28px);
   box-shadow:
-    0 8px 28px rgba(0,0,30,0.40),
+    0 8px 28px rgba(20,10,0,0.40),
     inset 0 1px 0 rgba(255,255,255,0.08),
     0 0 0 1px rgba(255,255,255,0.03) inset;
 }
 
 .expense-item:hover {
-  border-color: rgba(79,163,255,0.40);
+  border-color: rgba(255,157,61,0.40);
   box-shadow:
-    0 8px 32px rgba(0,0,30,0.50),
-    0 0 20px rgba(79,163,255,0.08),
+    0 8px 32px rgba(20,10,0,0.50),
+    0 0 20px rgba(255,157,61,0.08),
     inset 0 1px 0 rgba(255,255,255,0.10);
 }
 
 .expense-item.done {
   background: rgba(255,255,255,0.03);
-  border-color: rgba(100,160,255,0.12);
+  border-color: rgba(255,178,71,0.12);
 }
 
 .expense-item.done .expense-desc,
@@ -496,7 +494,7 @@ label[for="payGpay"].active { color: #fff; }
 }
 
 .pay-dot.cash { background: var(--cash); box-shadow: 0 0 10px rgba(255,209,102,0.6); }
-.pay-dot.gpay { background: var(--gpay); box-shadow: 0 0 10px rgba(129,140,248,0.6); }
+.pay-dot.gpay { background: var(--gpay); box-shadow: 0 0 10px rgba(255,112,67,0.6); }
 
 .expense-desc {
   flex: 1;
@@ -531,13 +529,13 @@ label[for="payGpay"].active { color: #fff; }
 }
 
 .expense-method.gpay {
-  background: rgba(129,140,248,0.12);
+  background: rgba(255,112,67,0.12);
   color: var(--gpay);
-  border: 1px solid rgba(129,140,248,0.28);
+  border: 1px solid rgba(255,112,67,0.28);
 }
 
 .expense-amount {
-  font-family: 'DM Mono', monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: var(--text);
@@ -563,29 +561,29 @@ label[for="payGpay"].active { color: #fff; }
   flex-shrink: 0;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  box-shadow: 0 2px 10px rgba(0,0,20,0.2), inset 0 1px 0 rgba(255,255,255,0.08);
+  box-shadow: 0 2px 10px rgba(15,8,0,0.2), inset 0 1px 0 rgba(255,255,255,0.08);
 }
 
 .icon-btn:active { transform: scale(0.88); }
 
 .icon-btn.edit { color: var(--accent); }
-.icon-btn.edit:hover { background: rgba(79,163,255,0.14); border-color: rgba(79,163,255,0.40); box-shadow: 0 0 14px rgba(79,163,255,0.2); }
+.icon-btn.edit:hover { background: rgba(255,157,61,0.14); border-color: rgba(255,157,61,0.40); box-shadow: 0 0 14px rgba(255,157,61,0.2); }
 
 .icon-btn.del { color: var(--red); }
-.icon-btn.del:hover { background: rgba(255,107,138,0.12); border-color: rgba(255,107,138,0.30); box-shadow: 0 0 14px rgba(255,107,138,0.18); }
+.icon-btn.del:hover { background: rgba(255,82,82,0.12); border-color: rgba(255,82,82,0.30); box-shadow: 0 0 14px rgba(255,82,82,0.18); }
 
 .icon-btn.save { color: var(--green); }
-.icon-btn.save:hover { background: rgba(90,239,192,0.12); border-color: rgba(90,239,192,0.30); }
+.icon-btn.save:hover { background: rgba(139,195,74,0.12); border-color: rgba(139,195,74,0.30); }
 
 .icon-btn.cancel { color: var(--text2); }
 
 /* ── EDITING ROW ── */
 .expense-item.editing {
-  background: rgba(20,40,100,0.65);
+  background: rgba(140,70,15,0.65);
   border-color: var(--accent);
   box-shadow:
-    0 0 0 2px rgba(79,163,255,0.20),
-    0 12px 36px rgba(0,0,40,0.5),
+    0 0 0 2px rgba(255,157,61,0.20),
+    0 12px 36px rgba(20,10,0,0.5),
     inset 0 1px 0 rgba(255,255,255,0.10);
   flex-wrap: wrap;
   gap: 10px;
@@ -606,7 +604,7 @@ label[for="payGpay"].active { color: #fff; }
   border-radius: 9px;
   color: var(--text);
   font-size: 14px;
-  font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   outline: none;
   min-width: 0;
@@ -615,7 +613,7 @@ label[for="payGpay"].active { color: #fff; }
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
 }
 
-.edit-desc:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(79,163,255,0.15), inset 0 1px 0 rgba(255,255,255,0.10); }
+.edit-desc:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(255,157,61,0.15), inset 0 1px 0 rgba(255,255,255,0.10); }
 
 .edit-amount {
   width: 90px;
@@ -625,7 +623,7 @@ label[for="payGpay"].active { color: #fff; }
   border-radius: 9px;
   color: var(--text);
   font-size: 14px;
-  font-family: 'DM Mono', monospace;
+  font-family: Arial, Helvetica, sans-serif;
   outline: none;
   text-align: right;
   flex-shrink: 0;
@@ -633,7 +631,7 @@ label[for="payGpay"].active { color: #fff; }
   -webkit-backdrop-filter: blur(16px);
 }
 
-.edit-amount:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(79,163,255,0.15); }
+.edit-amount:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(255,157,61,0.15); }
 
 .edit-pay-toggle {
   display: flex;
@@ -665,9 +663,9 @@ label[for="payGpay"].active { color: #fff; }
 }
 
 .edit-pay-opt.active-gpay {
-  background: linear-gradient(135deg, #818cf8, #6366f1);
+  background: linear-gradient(135deg, #ff7043, #ff5722);
   color: #fff;
-  box-shadow: 0 2px 10px rgba(129,140,248,0.35);
+  box-shadow: 0 2px 10px rgba(255,112,67,0.35);
 }
 
 /* ── EMPTY STATE ── */
@@ -677,7 +675,7 @@ label[for="payGpay"].active { color: #fff; }
   color: var(--muted);
 }
 
-.empty-icon { font-size: 44px; margin-bottom: 14px; filter: drop-shadow(0 0 16px rgba(79,163,255,0.3)); }
+.empty-icon { font-size: 44px; margin-bottom: 14px; filter: drop-shadow(0 0 16px rgba(255,157,61,0.3)); }
 .empty-title { font-size: 16px; font-weight: 700; margin-bottom: 6px; color: var(--text2); }
 .empty-sub { font-size: 13px; }
 
@@ -687,14 +685,14 @@ label[for="payGpay"].active { color: #fff; }
   bottom: 28px;
   left: 50%;
   transform: translateX(-50%) translateY(20px);
-  background: rgba(10,20,60,0.90);
+  background: rgba(40,20,5,0.90);
   border: 1px solid var(--border2);
   color: var(--text);
   padding: 13px 24px;
   border-radius: 99px;
   font-size: 14px;
   font-weight: 600;
-  box-shadow: 0 8px 40px rgba(0,0,30,0.6), 0 0 20px rgba(79,163,255,0.10);
+  box-shadow: 0 8px 40px rgba(20,10,0,0.6), 0 0 20px rgba(255,157,61,0.10);
   z-index: 999;
   opacity: 0;
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -708,15 +706,15 @@ label[for="payGpay"].active { color: #fff; }
   transform: translateX(-50%) translateY(0);
 }
 
-.toast.success { border-color: rgba(79,163,255,0.50); color: var(--accent); box-shadow: 0 8px 40px rgba(0,0,30,0.6), 0 0 24px rgba(79,163,255,0.18); }
-.toast.error { border-color: rgba(255,107,138,0.45); color: var(--red); }
+.toast.success { border-color: rgba(255,157,61,0.50); color: var(--accent); box-shadow: 0 8px 40px rgba(20,10,0,0.6), 0 0 24px rgba(255,157,61,0.18); }
+.toast.error { border-color: rgba(255,82,82,0.45); color: var(--red); }
 
 /* ── SAVING BAR ── */
 .saving-bar {
   position: fixed;
   top: 0; left: 0; right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #1a6fff, #4fa3ff, #818cf8, #4fa3ff);
+  background: linear-gradient(90deg, #ff6f00, #ff9d3d, #ff7043, #ff9d3d);
   background-size: 200% 100%;
   z-index: 200;
   transform: scaleX(0);
@@ -734,7 +732,7 @@ label[for="payGpay"].active { color: #fff; }
 .expense-date {
   font-size: 10px;
   color: var(--muted);
-  font-family: 'DM Mono', monospace;
+  font-family: Arial, Helvetica, sans-serif;
   display: block;
   margin-top: 2px;
 }
@@ -915,8 +913,8 @@ const styleEl = document.createElement('style');
 styleEl.textContent = `
   .pay-toggle[data-pay="gpay"]::before {
     transform: translateX(100%) !important;
-    background: linear-gradient(135deg, #818cf8, #6366f1) !important;
-    box-shadow: 0 4px 18px rgba(129,140,248,0.40) !important;
+    background: linear-gradient(135deg, #ff7043, #ff5722) !important;
+    box-shadow: 0 4px 18px rgba(255,112,67,0.40) !important;
   }
   .pay-toggle[data-pay="cash"]::before {
     transform: translateX(0) !important;
