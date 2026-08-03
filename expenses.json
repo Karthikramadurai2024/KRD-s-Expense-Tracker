@@ -196,7 +196,7 @@
     "description": "Tea Parcel",
     "amount": 35,
     "method": "gpay",
-    "done": false,
+    "done": true,
     "created_at": "2026-08-03T11:05:31.128Z"
   },
   {
