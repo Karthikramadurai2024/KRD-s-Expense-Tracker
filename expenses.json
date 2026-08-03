@@ -198,5 +198,13 @@
     "method": "gpay",
     "done": false,
     "created_at": "2026-08-03T11:05:31.128Z"
+  },
+  {
+    "id": 1785764959589.2283,
+    "description": "Ice cream",
+    "amount": 45,
+    "method": "gpay",
+    "done": false,
+    "created_at": "2026-08-03T13:49:19.584Z"
   }
 ]
