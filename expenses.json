@@ -84,7 +84,7 @@
     "description": "AC Wiring Electrician",
     "amount": 1000,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-08-02T05:49:08.454Z"
   },
   {
