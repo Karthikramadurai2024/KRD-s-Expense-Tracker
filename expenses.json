@@ -300,7 +300,7 @@
     "description": "Snacks",
     "amount": 65,
     "method": "gpay",
-    "done": false,
+    "done": true,
     "created_at": "2026-08-05T11:39:03.628Z"
   }
 ]
