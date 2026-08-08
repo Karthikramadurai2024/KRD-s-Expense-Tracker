@@ -462,5 +462,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-08-08T12:23:37.993Z"
+  },
+  {
+    "id": 1786191947557.007,
+    "description": "Mukk",
+    "amount": 10,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-08-08T12:25:47.556Z"
   }
 ]
