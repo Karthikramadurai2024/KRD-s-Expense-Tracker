@@ -582,5 +582,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-08-11T08:09:24.937Z"
+  },
+  {
+    "id": 1786435770364.4087,
+    "description": "Teq",
+    "amount": 15,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-08-11T08:09:30.364Z"
   }
 ]
