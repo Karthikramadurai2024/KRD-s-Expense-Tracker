@@ -630,5 +630,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-08-12T12:35:08.404Z"
+  },
+  {
+    "id": 1786538112419.1824,
+    "description": "Snakcs",
+    "amount": 100,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-08-12T12:35:12.419Z"
   }
 ]
