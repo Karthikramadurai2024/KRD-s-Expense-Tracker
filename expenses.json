@@ -662,5 +662,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-08-13T05:06:48.939Z"
+  },
+  {
+    "id": 1786597750368.7512,
+    "description": "Curd rice",
+    "amount": 30,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-08-13T05:09:10.368Z"
   }
 ]
