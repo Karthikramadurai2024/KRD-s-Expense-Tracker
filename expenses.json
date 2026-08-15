@@ -790,5 +790,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-08-15T10:59:31.081Z"
+  },
+  {
+    "id": 1786795169434.4585,
+    "description": "Pop corn",
+    "amount": 180,
+    "method": "gpay",
+    "done": false,
+    "created_at": "2026-08-15T11:59:29.433Z"
   }
 ]
