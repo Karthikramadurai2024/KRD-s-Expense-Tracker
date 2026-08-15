@@ -731,7 +731,7 @@
     "id": 1786764839783.5554,
     "description": "Veg",
     "amount": 20,
-    "method": "gpay",
+    "method": "cash",
     "done": false,
     "created_at": "2026-08-15T03:33:59.782Z"
   }
