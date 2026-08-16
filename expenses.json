@@ -580,7 +580,7 @@
     "description": "Empty",
     "amount": 70,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-08-11T08:09:24.937Z"
   },
   {
