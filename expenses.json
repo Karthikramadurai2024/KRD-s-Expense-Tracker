@@ -838,5 +838,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-08-16T10:26:48.782Z"
+  },
+  {
+    "id": 1786876220591.1526,
+    "description": "Twa",
+    "amount": 35,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-08-16T10:30:20.591Z"
   }
 ]
