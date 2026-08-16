@@ -812,7 +812,7 @@
     "description": "Snakcs",
     "amount": 50,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-08-15T12:42:46.721Z"
   },
   {
