@@ -764,7 +764,7 @@
     "description": "Lunch",
     "amount": 720,
     "method": "gpay",
-    "done": false,
+    "done": true,
     "created_at": "2026-08-15T09:39:29.024Z"
   },
   {
