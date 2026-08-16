@@ -814,5 +814,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-08-15T12:42:46.721Z"
+  },
+  {
+    "id": 1786860450375.1665,
+    "description": "Chicken",
+    "amount": 120,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-08-16T06:07:30.369Z"
   }
 ]
