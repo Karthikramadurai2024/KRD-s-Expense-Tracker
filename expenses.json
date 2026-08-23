@@ -900,7 +900,7 @@
     "description": "Curd",
     "amount": 37,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-08-18T04:51:30.403Z"
   },
   {
