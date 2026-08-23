@@ -948,7 +948,7 @@
     "description": "Drill bit",
     "amount": 40,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-08-19T09:43:10.141Z"
   },
   {
