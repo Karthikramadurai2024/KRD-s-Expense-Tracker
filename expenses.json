@@ -972,7 +972,7 @@
     "description": "Milk",
     "amount": 10,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-08-19T13:52:30.042Z"
   },
   {
