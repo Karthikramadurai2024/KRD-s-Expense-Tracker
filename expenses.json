@@ -1114,7 +1114,7 @@
   {
     "id": 1787555818197.4539,
     "description": "Ammu Expebse",
-    "amount": 100,
+    "amount": 150,
     "method": "gpay",
     "done": false,
     "created_at": "2026-08-24T07:16:58.190Z"
