@@ -1238,5 +1238,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-08-28T13:07:34.976Z"
+  },
+  {
+    "id": 1787922719561.079,
+    "description": "Groceries",
+    "amount": 80,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-08-28T13:11:59.561Z"
   }
 ]
