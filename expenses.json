@@ -1104,14 +1104,6 @@
     "created_at": "2026-08-23T14:01:36.899Z"
   },
   {
-    "id": 1787555818197.4539,
-    "description": "Ammu Expebse",
-    "amount": 150,
-    "method": "gpay",
-    "done": false,
-    "created_at": "2026-08-24T07:16:58.190Z"
-  },
-  {
     "id": 1787569191907.3381,
     "description": "Kalidas",
     "amount": 500,
