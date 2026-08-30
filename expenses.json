@@ -1256,14 +1256,6 @@
     "created_at": "2026-08-28T13:24:27.723Z"
   },
   {
-    "id": 1787924492669.8276,
-    "description": "Mu",
-    "amount": 490,
-    "method": "gpay",
-    "done": false,
-    "created_at": "2026-08-28T13:41:32.669Z"
-  },
-  {
     "id": 1787926341437.5535,
     "description": "Ammu",
     "amount": 81,
