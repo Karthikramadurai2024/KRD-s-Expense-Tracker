@@ -1294,5 +1294,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-08-31T10:15:53.780Z"
+  },
+  {
+    "id": 1788180845711.563,
+    "description": "Dress",
+    "amount": 897,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-08-31T12:54:05.708Z"
   }
 ]
