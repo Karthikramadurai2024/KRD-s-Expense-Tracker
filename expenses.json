@@ -1286,5 +1286,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-08-31T05:13:28.078Z"
+  },
+  {
+    "id": 1788171353784.1467,
+    "description": "Lumch",
+    "amount": 400,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-08-31T10:15:53.780Z"
   }
 ]
