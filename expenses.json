@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": 1788270058767.5342,
+    "description": "Banana",
+    "amount": 20,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-09-01T13:40:58.767Z"
+  }
+]
