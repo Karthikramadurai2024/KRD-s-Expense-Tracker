@@ -182,5 +182,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-09-06T08:25:56.346Z"
+  },
+  {
+    "id": 1788683160303.142,
+    "description": "Egg",
+    "amount": 33,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-09-06T08:26:00.302Z"
   }
 ]
