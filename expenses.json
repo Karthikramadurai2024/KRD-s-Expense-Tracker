@@ -254,5 +254,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-09-07T05:47:30.422Z"
+  },
+  {
+    "id": 1788760581005.2852,
+    "description": "Rice and Chilli",
+    "amount": 285,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-09-07T05:56:21.005Z"
   }
 ]
