@@ -286,5 +286,13 @@
     "method": "gpay",
     "done": false,
     "created_at": "2026-09-09T10:41:37.616Z"
+  },
+  {
+    "id": 1788956585904.5479,
+    "description": "Tea dnacks",
+    "amount": 105,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-09-09T12:23:05.895Z"
   }
 ]
