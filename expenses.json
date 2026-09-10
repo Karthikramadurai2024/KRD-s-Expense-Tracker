@@ -334,5 +334,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-09-10T13:48:40.140Z"
+  },
+  {
+    "id": 1789059151670.415,
+    "description": "Fish",
+    "amount": 200,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-09-10T16:52:31.670Z"
   }
 ]
