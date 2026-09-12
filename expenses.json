@@ -228,7 +228,7 @@
     "description": "Snakcs",
     "amount": 290,
     "method": "gpay",
-    "done": false,
+    "done": true,
     "created_at": "2026-09-06T14:52:57.925Z"
   },
   {
