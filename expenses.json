@@ -356,7 +356,7 @@
     "description": "Tea",
     "amount": 55,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-09-11T13:04:14.953Z"
   }
 ]
