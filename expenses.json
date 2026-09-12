@@ -332,7 +332,7 @@
     "description": "Tea parcel 25",
     "amount": 25,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-09-10T13:48:40.140Z"
   },
   {
