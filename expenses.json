@@ -148,7 +148,7 @@
     "description": "Insurance",
     "amount": 42,
     "method": "gpay",
-    "done": false,
+    "done": true,
     "created_at": "2026-09-05T12:59:26.459Z"
   },
   {
