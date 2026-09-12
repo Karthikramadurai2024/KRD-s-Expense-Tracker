@@ -188,7 +188,7 @@
     "description": "Egg",
     "amount": 33,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-09-06T08:26:00.302Z"
   },
   {
