@@ -364,7 +364,7 @@
     "description": "Ammu pocket money",
     "amount": 30,
     "method": "gpay",
-    "done": false,
+    "done": true,
     "created_at": "2026-09-13T06:00:04.418Z"
   },
   {
