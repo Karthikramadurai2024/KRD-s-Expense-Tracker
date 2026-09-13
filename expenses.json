@@ -380,7 +380,7 @@
     "description": "Yea parcel",
     "amount": 35,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-09-13T12:37:26.123Z"
   },
   {
