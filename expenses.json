@@ -406,5 +406,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-09-15T05:06:50.870Z"
+  },
+  {
+    "id": 1789448957206.8728,
+    "description": "Ellu",
+    "amount": 40,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-09-15T05:09:17.206Z"
   }
 ]
