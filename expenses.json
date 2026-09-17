@@ -462,5 +462,13 @@
     "method": "gpay",
     "done": false,
     "created_at": "2026-09-16T23:42:32.784Z"
+  },
+  {
+    "id": 1789655452171.953,
+    "description": "Honey",
+    "amount": 70,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-09-17T14:30:52.168Z"
   }
 ]
