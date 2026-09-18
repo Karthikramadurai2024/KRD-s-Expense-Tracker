@@ -476,7 +476,7 @@
     "description": "Leggings",
     "amount": 550,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-09-17T14:31:06.053Z"
   },
   {
