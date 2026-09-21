@@ -606,5 +606,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-09-21T12:05:42.755Z"
+  },
+  {
+    "id": 1789998519671.69,
+    "description": "Tea",
+    "amount": 5,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-09-21T13:48:39.667Z"
   }
 ]
