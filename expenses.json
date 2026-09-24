@@ -694,5 +694,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-09-24T12:25:58.692Z"
+  },
+  {
+    "id": 1790252762075.9617,
+    "description": "Sna ks",
+    "amount": 45,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-09-24T12:26:02.075Z"
   }
 ]
