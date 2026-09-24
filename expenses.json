@@ -683,7 +683,7 @@
     "id": 1790245515174.0393,
     "description": "Ammu",
     "amount": 500,
-    "method": "cash",
+    "method": "gpay",
     "done": false,
     "created_at": "2026-09-24T10:25:15.171Z"
   }
