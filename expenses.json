@@ -620,7 +620,7 @@
     "description": "Tea",
     "amount": 5,
     "method": "gpay",
-    "done": false,
+    "done": true,
     "created_at": "2026-09-21T13:48:44.459Z"
   },
   {
