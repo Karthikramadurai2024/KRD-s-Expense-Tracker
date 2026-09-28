@@ -830,5 +830,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-09-28T05:59:49.868Z"
+  },
+  {
+    "id": 1790579724500.9045,
+    "description": "Xerox",
+    "amount": 4,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-09-28T07:15:24.500Z"
   }
 ]
