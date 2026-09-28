@@ -846,5 +846,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-09-28T10:17:30.802Z"
+  },
+  {
+    "id": 1790590658718.195,
+    "description": "Juice",
+    "amount": 110,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-09-28T10:17:38.718Z"
   }
 ]
