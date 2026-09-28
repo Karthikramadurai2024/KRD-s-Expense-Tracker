@@ -838,5 +838,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-09-28T07:15:24.500Z"
+  },
+  {
+    "id": 1790590650803.284,
+    "description": "Lunch",
+    "amount": 1344,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-09-28T10:17:30.802Z"
   }
 ]
