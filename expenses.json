@@ -844,7 +844,7 @@
     "description": "Juice",
     "amount": 110,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-09-28T10:17:38.718Z"
   }
 ]
