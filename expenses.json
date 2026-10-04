@@ -94,5 +94,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-10-04T08:32:18.162Z"
+  },
+  {
+    "id": 1791121530775.1355,
+    "description": "Hypothecation removeal",
+    "amount": 25,
+    "method": "gpay",
+    "done": false,
+    "created_at": "2026-10-04T13:45:30.766Z"
   }
 ]
