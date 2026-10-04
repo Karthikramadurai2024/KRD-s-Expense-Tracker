@@ -70,5 +70,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-10-03T07:49:37.105Z"
+  },
+  {
+    "id": 1791093399566.4917,
+    "description": "Stationary",
+    "amount": 115,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-10-04T05:56:39.557Z"
   }
 ]
