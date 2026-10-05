@@ -20,7 +20,7 @@
     "description": "Amazon Pay later",
     "amount": 407,
     "method": "gpay",
-    "done": false,
+    "done": true,
     "created_at": "2026-10-01T11:18:05.566Z"
   },
   {
