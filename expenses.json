@@ -60,7 +60,7 @@
     "description": "Aa batteries",
     "amount": 50,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-10-03T07:35:51.096Z"
   },
   {
