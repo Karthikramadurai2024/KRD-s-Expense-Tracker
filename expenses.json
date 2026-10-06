@@ -190,5 +190,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-10-06T13:58:22.683Z"
+  },
+  {
+    "id": 1791295110336.8499,
+    "description": "Temper glas",
+    "amount": 100,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-10-06T13:58:30.336Z"
   }
 ]
