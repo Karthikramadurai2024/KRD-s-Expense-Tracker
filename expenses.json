@@ -182,5 +182,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-10-06T13:44:55.707Z"
+  },
+  {
+    "id": 1791295102683.0498,
+    "description": "Mobile stand",
+    "amount": 350,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-10-06T13:58:22.683Z"
   }
 ]
