@@ -270,5 +270,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-10-10T06:01:50.846Z"
+  },
+  {
+    "id": 1791616066706.0723,
+    "description": "Food",
+    "amount": 80,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-10-10T07:07:46.706Z"
   }
 ]
