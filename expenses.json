@@ -286,5 +286,13 @@
     "method": "cash",
     "done": true,
     "created_at": "2026-10-10T07:14:57.765Z"
+  },
+  {
+    "id": 1791697539424.0112,
+    "description": "Tea dback",
+    "amount": 60,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-10-11T05:45:39.420Z"
   }
 ]
