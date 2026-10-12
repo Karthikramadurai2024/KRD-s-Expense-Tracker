@@ -292,7 +292,7 @@
     "description": "Tea dback",
     "amount": 60,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-10-11T05:45:39.420Z"
   },
   {
