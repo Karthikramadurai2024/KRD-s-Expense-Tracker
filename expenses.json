@@ -300,7 +300,7 @@
     "description": "Sujatha medicine",
     "amount": 230,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-10-11T13:51:18.121Z"
   },
   {
