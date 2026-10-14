@@ -354,7 +354,7 @@
   {
     "id": 1791957578075.2473,
     "description": "Vi recharge",
-    "amount": 199,
+    "amount": 159,
     "method": "gpay",
     "done": false,
     "created_at": "2026-10-14T05:59:38.064Z"
