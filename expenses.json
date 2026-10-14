@@ -340,7 +340,7 @@
     "description": "Snack",
     "amount": 40,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-10-12T14:30:46.386Z"
   },
   {
