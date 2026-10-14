@@ -332,7 +332,7 @@
     "description": "Tea",
     "amount": 20,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-10-12T14:27:05.425Z"
   },
   {
