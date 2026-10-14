@@ -348,7 +348,7 @@
     "description": "Laptop stand",
     "amount": 184,
     "method": "gpay",
-    "done": false,
+    "done": true,
     "created_at": "2026-10-13T03:57:38.768Z"
   },
   {
