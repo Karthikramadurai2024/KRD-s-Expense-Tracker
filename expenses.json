@@ -390,5 +390,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-10-16T07:42:45.186Z"
+  },
+  {
+    "id": 1792162427620.9807,
+    "description": "Milk",
+    "amount": 10,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-10-16T14:53:47.609Z"
   }
 ]
