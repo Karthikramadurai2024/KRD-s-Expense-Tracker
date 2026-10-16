@@ -386,7 +386,7 @@
   {
     "id": 1792136565189.7368,
     "description": "Tea",
-    "amount": 15,
+    "amount": 30,
     "method": "cash",
     "done": false,
     "created_at": "2026-10-16T07:42:45.186Z"
