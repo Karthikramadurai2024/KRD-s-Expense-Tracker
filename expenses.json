@@ -430,5 +430,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-10-18T04:56:43.847Z"
+  },
+  {
+    "id": 1792299826953.6965,
+    "description": "Leaves",
+    "amount": 30,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-10-18T05:03:46.953Z"
   }
 ]
