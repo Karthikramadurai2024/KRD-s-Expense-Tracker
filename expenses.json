@@ -542,5 +542,13 @@
     "method": "gpay",
     "done": false,
     "created_at": "2026-10-22T11:33:31.332Z"
+  },
+  {
+    "id": 1792669226035.0625,
+    "description": "Guitar accessory",
+    "amount": 80,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-10-22T11:40:26.035Z"
   }
 ]
