@@ -532,7 +532,7 @@
     "description": "Dress",
     "amount": 1288,
     "method": "gpay",
-    "done": false,
+    "done": true,
     "created_at": "2026-10-22T10:28:09.197Z"
   },
   {
