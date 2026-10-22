@@ -518,5 +518,13 @@
     "method": "gpay",
     "done": false,
     "created_at": "2026-10-22T08:56:50.264Z"
+  },
+  {
+    "id": 1792662696892.5762,
+    "description": "Lunch",
+    "amount": 680,
+    "method": "gpay",
+    "done": false,
+    "created_at": "2026-10-22T09:51:36.892Z"
   }
 ]
