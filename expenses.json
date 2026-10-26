@@ -590,5 +590,13 @@
     "method": "cash",
     "done": true,
     "created_at": "2026-10-25T13:53:42.790Z"
+  },
+  {
+    "id": 1793015694691.5173,
+    "description": "Ammu pocket",
+    "amount": 300,
+    "method": "gpay",
+    "done": false,
+    "created_at": "2026-10-26T11:54:54.683Z"
   }
 ]
