@@ -630,5 +630,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-10-28T08:38:43.664Z"
+  },
+  {
+    "id": 1793193696862.5806,
+    "description": "Ammu plazo",
+    "amount": 480,
+    "method": "gpay",
+    "done": false,
+    "created_at": "2026-10-28T13:21:36.853Z"
   }
 ]
