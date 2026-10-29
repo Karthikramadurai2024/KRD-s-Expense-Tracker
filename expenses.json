@@ -646,5 +646,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-10-29T15:05:12.324Z"
+  },
+  {
+    "id": 1793286318626.77,
+    "description": "Snacks",
+    "amount": 30,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-10-29T15:05:18.626Z"
   }
 ]
