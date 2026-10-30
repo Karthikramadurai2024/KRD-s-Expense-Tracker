@@ -670,5 +670,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-10-30T13:42:12.352Z"
+  },
+  {
+    "id": 1793368331394.807,
+    "description": "Sna ka",
+    "amount": 130,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-10-30T13:52:11.394Z"
   }
 ]
