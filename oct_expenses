@@ -1,0 +1,706 @@
+[
+  {
+    "id": 1790837017743.1692,
+    "description": "Chciken",
+    "amount": 100,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-01T06:43:37.743Z"
+  },
+  {
+    "id": 1790837028173.801,
+    "description": "Veggie",
+    "amount": 50,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-01T06:43:48.173Z"
+  },
+  {
+    "id": 1790853485568.619,
+    "description": "Amazon Pay later",
+    "amount": 407,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-01T11:18:05.566Z"
+  },
+  {
+    "id": 1790867364859.9924,
+    "description": "Tea",
+    "amount": 15,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-01T15:09:24.853Z"
+  },
+  {
+    "id": 1790947412777.1487,
+    "description": "Milk",
+    "amount": 10,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-02T13:23:32.768Z"
+  },
+  {
+    "id": 1790947780280.3225,
+    "description": "Tea",
+    "amount": 15,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-02T13:29:40.279Z"
+  },
+  {
+    "id": 1791005785328.1702,
+    "description": "Bikr EMI",
+    "amount": 3946,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-03T05:36:25.328Z"
+  },
+  {
+    "id": 1791012951107.8171,
+    "description": "Aa batteries",
+    "amount": 50,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-03T07:35:51.096Z"
+  },
+  {
+    "id": 1791013777105.8926,
+    "description": "Veg",
+    "amount": 10,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-03T07:49:37.105Z"
+  },
+  {
+    "id": 1791093399566.4917,
+    "description": "Stationary",
+    "amount": 115,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-04T05:56:39.557Z"
+  },
+  {
+    "id": 1791093707888.0186,
+    "description": "Veg",
+    "amount": 110,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-04T06:01:47.888Z"
+  },
+  {
+    "id": 1791102738162.9534,
+    "description": "Printout",
+    "amount": 160,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-04T08:32:18.162Z"
+  },
+  {
+    "id": 1791121530775.1355,
+    "description": "Hypothecation removeal",
+    "amount": 25,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-04T13:45:30.766Z"
+  },
+  {
+    "id": 1791122825788.3142,
+    "description": "Noc printout",
+    "amount": 25,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-04T14:07:05.788Z"
+  },
+  {
+    "id": 1791122832454.3296,
+    "description": "Milk",
+    "amount": 10,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-04T14:07:12.454Z"
+  },
+  {
+    "id": 1791178442124.4722,
+    "description": "APY",
+    "amount": 42,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-05T05:34:02.124Z"
+  },
+  {
+    "id": 1791183377906.4739,
+    "description": "Puc",
+    "amount": 150,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-05T06:56:17.903Z"
+  },
+  {
+    "id": 1791215823089.4392,
+    "description": "Xerox documents",
+    "amount": 40,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-05T15:57:03.084Z"
+  },
+  {
+    "id": 1791221081346.971,
+    "description": "Ammu Salary",
+    "amount": 15000,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-05T17:24:41.346Z"
+  },
+  {
+    "id": 1791256944304.6921,
+    "description": "EB Advance",
+    "amount": 600,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-06T03:22:24.295Z"
+  },
+  {
+    "id": 1791257186323.387,
+    "description": "Ammu Table",
+    "amount": 404,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-06T03:26:26.323Z"
+  },
+  {
+    "id": 1791260184372.5781,
+    "description": "Leaves",
+    "amount": 10,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-06T04:16:24.368Z"
+  },
+  {
+    "id": 1791294295710.2056,
+    "description": "Milk",
+    "amount": 10,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-06T13:44:55.707Z"
+  },
+  {
+    "id": 1791295102683.0498,
+    "description": "Mobile stand",
+    "amount": 350,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-06T13:58:22.683Z"
+  },
+  {
+    "id": 1791295110336.8499,
+    "description": "Temper glas",
+    "amount": 100,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-06T13:58:30.336Z"
+  },
+  {
+    "id": 1791295597741.3604,
+    "description": "Tea",
+    "amount": 15,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-06T14:06:37.740Z"
+  },
+  {
+    "id": 1791348551522.366,
+    "description": "Xerox",
+    "amount": 35,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-07T04:49:11.514Z"
+  },
+  {
+    "id": 1791354857364.3657,
+    "description": "Pen",
+    "amount": 10,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-07T06:34:17.352Z"
+  },
+  {
+    "id": 1791363023831.4587,
+    "description": "Jio Bill",
+    "amount": 966.42,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-07T08:50:23.820Z"
+  },
+  {
+    "id": 1791371112764.5088,
+    "description": "Laptop stand",
+    "amount": 204,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-07T11:05:12.764Z"
+  },
+  {
+    "id": 1791445964253.6453,
+    "description": "Tea",
+    "amount": 15,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-08T07:52:44.246Z"
+  },
+  {
+    "id": 1791477448747.429,
+    "description": "Ammu Cosmetics",
+    "amount": 581,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-08T16:37:28.739Z"
+  },
+  {
+    "id": 1791542253235.2483,
+    "description": "Ammu Bakeey",
+    "amount": 175,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-09T10:37:33.229Z"
+  },
+  {
+    "id": 1791612110860.884,
+    "description": "Tea",
+    "amount": 40,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-10T06:01:50.846Z"
+  },
+  {
+    "id": 1791616066706.0723,
+    "description": "Food",
+    "amount": 80,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-10T07:07:46.706Z"
+  },
+  {
+    "id": 1791616497765.7864,
+    "description": "Empty",
+    "amount": 70,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-10T07:14:57.765Z"
+  },
+  {
+    "id": 1791697539424.0112,
+    "description": "Tea dback",
+    "amount": 60,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-11T05:45:39.420Z"
+  },
+  {
+    "id": 1791726678132.0247,
+    "description": "Sujatha medicine",
+    "amount": 230,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-11T13:51:18.121Z"
+  },
+  {
+    "id": 1791727208044.4502,
+    "description": "Kaalan",
+    "amount": 35,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-11T14:00:08.043Z"
+  },
+  {
+    "id": 1791776639265.372,
+    "description": "Ammu Pocket use",
+    "amount": 80,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-12T03:43:59.255Z"
+  },
+  {
+    "id": 1791777536280.4717,
+    "description": "Karthik Pillo2",
+    "amount": 944,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-12T03:58:56.273Z"
+  },
+  {
+    "id": 1791815225428.6006,
+    "description": "Tea",
+    "amount": 20,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-12T14:27:05.425Z"
+  },
+  {
+    "id": 1791815446386.4673,
+    "description": "Snack",
+    "amount": 40,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-12T14:30:46.386Z"
+  },
+  {
+    "id": 1791863858771.5696,
+    "description": "Laptop stand",
+    "amount": 184,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-13T03:57:38.768Z"
+  },
+  {
+    "id": 1791957578075.2473,
+    "description": "Vi recharge",
+    "amount": 159,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-14T05:59:38.064Z"
+  },
+  {
+    "id": 1791981036156.8167,
+    "description": "Tea",
+    "amount": 25,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-14T12:30:36.147Z"
+  },
+  {
+    "id": 1791989870283.85,
+    "description": "Nanban Recharge",
+    "amount": 33,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-14T14:57:50.283Z"
+  },
+  {
+    "id": 1792080567355.8032,
+    "description": "Rc duplicate",
+    "amount": 175,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-15T16:09:27.346Z"
+  },
+  {
+    "id": 1792136565189.7368,
+    "description": "Tea",
+    "amount": 30,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-16T07:42:45.186Z"
+  },
+  {
+    "id": 1792162427620.9807,
+    "description": "Milk",
+    "amount": 10,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-16T14:53:47.609Z"
+  },
+  {
+    "id": 1792182562394.3757,
+    "description": "Silenthill Manguni",
+    "amount": 28,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-16T20:29:22.385Z"
+  },
+  {
+    "id": 1792221362567.774,
+    "description": "Ammu Flipkart",
+    "amount": 442,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-17T07:16:02.560Z"
+  },
+  {
+    "id": 1792298933144.8484,
+    "description": "Mutton",
+    "amount": 400,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-18T04:48:53.140Z"
+  },
+  {
+    "id": 1792299403847.8054,
+    "description": "Kada",
+    "amount": 120,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-18T04:56:43.847Z"
+  },
+  {
+    "id": 1792299826953.6965,
+    "description": "Leaves",
+    "amount": 30,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-18T05:03:46.953Z"
+  },
+  {
+    "id": 1792325911590.0637,
+    "description": "Laptop EMI",
+    "amount": 25697,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-18T12:18:31.590Z"
+  },
+  {
+    "id": 1792329774892.9963,
+    "description": "Twq",
+    "amount": 15,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-18T13:22:54.887Z"
+  },
+  {
+    "id": 1792420669211.449,
+    "description": "Petrol",
+    "amount": 109,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-19T14:37:49.203Z"
+  },
+  {
+    "id": 1792420672901.0283,
+    "description": "Tea",
+    "amount": 15,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-19T14:37:52.901Z"
+  },
+  {
+    "id": 1792502424608.517,
+    "description": "Twa",
+    "amount": 25,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-20T13:20:24.601Z"
+  },
+  {
+    "id": 1792570837310.9321,
+    "description": "YouTube",
+    "amount": 149,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-21T08:20:37.310Z"
+  },
+  {
+    "id": 1792572231704.9185,
+    "description": "Tea",
+    "amount": 15,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-21T08:43:51.702Z"
+  },
+  {
+    "id": 1792647041144.0596,
+    "description": "Petrol",
+    "amount": 542,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-22T05:30:41.143Z"
+  },
+  {
+    "id": 1792650152381.848,
+    "description": "Gas stove",
+    "amount": 4300,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-22T06:22:32.381Z"
+  },
+  {
+    "id": 1792659410270.1304,
+    "description": "Kotak debit card",
+    "amount": 399,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-22T08:56:50.264Z"
+  },
+  {
+    "id": 1792662696892.5762,
+    "description": "Lunch",
+    "amount": 680,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-22T09:51:36.892Z"
+  },
+  {
+    "id": 1792664889197.4727,
+    "description": "Dress",
+    "amount": 1288,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-22T10:28:09.197Z"
+  },
+  {
+    "id": 1792668811333.1633,
+    "description": "Guitar",
+    "amount": 5100,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-22T11:33:31.332Z"
+  },
+  {
+    "id": 1792669226035.0625,
+    "description": "Guitar accessory",
+    "amount": 80,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-22T11:40:26.035Z"
+  },
+  {
+    "id": 1792824866857.8057,
+    "description": "Ammu pharmacy",
+    "amount": 115,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-24T06:54:26.852Z"
+  },
+  {
+    "id": 1792853718155.6685,
+    "description": "Twa",
+    "amount": 20,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-24T14:55:18.155Z"
+  },
+  {
+    "id": 1792853729201.7507,
+    "description": "Sujatha stationary",
+    "amount": 300,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-24T14:55:29.201Z"
+  },
+  {
+    "id": 1792936066972.647,
+    "description": "Tea",
+    "amount": 20,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-25T13:47:46.969Z"
+  },
+  {
+    "id": 1792936422790.3103,
+    "description": "Snacks",
+    "amount": 120,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-25T13:53:42.790Z"
+  },
+  {
+    "id": 1793015694691.5173,
+    "description": "Ammu pocket",
+    "amount": 300,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-26T11:54:54.683Z"
+  },
+  {
+    "id": 1793108265788.6064,
+    "description": "Tea",
+    "amount": 25,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-27T13:37:45.784Z"
+  },
+  {
+    "id": 1793108760077.4023,
+    "description": "Snacks",
+    "amount": 75,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-27T13:46:00.077Z"
+  },
+  {
+    "id": 1793115369446.753,
+    "description": "Mutton",
+    "amount": 400,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-27T15:36:09.446Z"
+  },
+  {
+    "id": 1793176723667.7668,
+    "description": "Tea",
+    "amount": 15,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-28T08:38:43.664Z"
+  },
+  {
+    "id": 1793193696862.5806,
+    "description": "Ammu plazo",
+    "amount": 480,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-28T13:21:36.853Z"
+  },
+  {
+    "id": 1793286312336.4854,
+    "description": "Tea",
+    "amount": 15,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-29T15:05:12.324Z"
+  },
+  {
+    "id": 1793286318626.77,
+    "description": "Snacks",
+    "amount": 30,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-29T15:05:18.626Z"
+  },
+  {
+    "id": 1793364903058.5981,
+    "description": "Sujatha Meesho",
+    "amount": 180,
+    "method": "gpay",
+    "done": true,
+    "created_at": "2026-10-30T12:55:03.058Z"
+  },
+  {
+    "id": 1793367732353.5645,
+    "description": "Milk",
+    "amount": 10,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-30T13:42:12.352Z"
+  },
+  {
+    "id": 1793368331394.807,
+    "description": "Sna ka",
+    "amount": 130,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-30T13:52:11.394Z"
+  },
+  {
+    "id": 1793424723645.523,
+    "description": "Twa",
+    "amount": 15,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-31T05:32:03.645Z"
+  },
+  {
+    "id": 1793424728501.5498,
+    "description": "Haircut",
+    "amount": 100,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-31T05:32:08.501Z"
+  },
+  {
+    "id": 1793431468811.3943,
+    "description": "Empty",
+    "amount": 210,
+    "method": "cash",
+    "done": true,
+    "created_at": "2026-10-31T07:24:28.810Z"
+  }
+]
