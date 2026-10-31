@@ -827,6 +827,28 @@ button, input, textarea, select { font-family: var(--font-ui); }
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+/* ── MONTH PICKER AND MONTH STATUS ── */
+.header-top { flex-direction: column; align-items: stretch; gap: 12px; }
+.month-toolbar { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.month-label { color: var(--text); font-size: 14px; line-height: 1.2; font-weight: 700; white-space: nowrap; min-width: 88px; }
+.month-input-wrap { display: flex; align-items: center; gap: 6px; flex: 1; min-width: 0; height: 40px; padding: 0 9px; color: var(--text2); background: rgba(255,255,255,0.06); border: 1px solid var(--border2); border-radius: 10px; box-shadow: inset 0 1px 0 rgba(255,255,255,0.08); }
+.month-input { width: 100%; min-width: 0; height: 100%; padding: 0; color: var(--text); background: transparent; border: 0; outline: 0; font-size: 13px; color-scheme: dark; }
+.month-input:focus-visible, .new-month-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.new-month-btn { min-height: 40px; padding: 0 12px; flex-shrink: 0; color: #061526; background: linear-gradient(135deg, #8bd0ff, #438ff0); border: 1px solid rgba(170,220,255,0.46); border-radius: 10px; font-size: 12px; font-weight: 700; white-space: nowrap; cursor: pointer; box-shadow: 0 5px 18px rgba(55,140,230,0.25), inset 0 1px 0 rgba(255,255,255,0.32); }
+.new-month-btn:active { transform: scale(0.97); }
+.month-status { display: flex; align-items: center; margin: 0 16px 16px; padding: 11px 13px; color: var(--text2); background: rgba(74,163,255,0.08); border: 1px solid var(--border2); border-radius: 12px; font-size: 12px; line-height: 1.45; }
+.month-status[data-state="missing"] { color: #d4e9ff; background: rgba(44,116,190,0.16); border-color: rgba(105,177,255,0.35); }
+.month-status[data-state="error"] { color: #ffd1d1; background: rgba(255,82,82,0.08); border-color: rgba(255,82,82,0.30); }
+.month-status[hidden] { display: none !important; }
+@media (max-width: 380px) {
+  .header-top { gap: 10px; }
+  .month-toolbar { gap: 6px; }
+  .month-label { min-width: 72px; font-size: 12px; }
+  .month-input-wrap { height: 38px; padding: 0 6px; gap: 4px; }
+  .month-input { font-size: 12px; }
+  .new-month-btn { min-height: 38px; padding: 0 8px; font-size: 11px; }
+  .month-status { margin: 0 12px 14px; }
 }</style>
 </head>
 <body>
@@ -839,10 +861,21 @@ button, input, textarea, select { font-family: var(--font-ui); }
     <div class="header-top">
       <div class="logo-row">
         <div class="logo-dot">💸</div>
-        <span class="app-name">KRD's Expenses - November</span>
+        <span class="app-name">KRD's Expenses</span>
       </div>
-     
+      <div class="month-toolbar">
+        <span class="month-label" id="currentMonthLabel"></span>
+        <label class="month-input-wrap" title="Choose a month">
+          <span aria-hidden="true">🗓️</span>
+          <input class="month-input" id="monthPicker" type="month" aria-label="Select expense month" />
+        </label>
+        <button class="new-month-btn" id="newMonthBtn" type="button">＋ New month</button>
+      </div>
     </div>
+  </div>
+
+  <div class="month-status" id="monthStatus" hidden>
+    <span id="monthStatusText"></span>
   </div>
 
   <div class="summary-strip">
@@ -928,7 +961,7 @@ button, input, textarea, select { font-family: var(--font-ui); }
 <script>
 const OWNER = 'shadow-wolf-forge';
 const REPO  = 'KRD-s-Expense-Tracker';
-const FILE  = 'expenses.json';
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 const T1 = 'github_pat_11BKK66LI027ob8gfOr5';
 const T2 = 'WQ_rDyhlY0hHBxLJ7kx2Ife6QxkR5M99iT';
@@ -937,7 +970,9 @@ const GITHUB_TOKEN = T1 + T2 + T3;
 
 let token = GITHUB_TOKEN;
 let expenses = [];
-let sha = null;
+const shaByMonth = new Map();
+let loadRequestId = 0;
+const selectedMonth = { value: '' };
 let selectedPay = 'cash';
 
 function enc(str) { return btoa(unescape(encodeURIComponent(str))); }
@@ -996,61 +1031,100 @@ function selectPay(method) {
   }
 }
 
+function getCurrentMonthKey() {
+  const now = new Date();
+  return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
+}
+function monthParts(monthKey = selectedMonth.value) {
+  const [year, month] = monthKey.split('-').map(Number);
+  if (!year || month < 1 || month > 12) throw new Error('Invalid month');
+  return { year, month };
+}
+function monthLabel(monthKey = selectedMonth.value) {
+  const { year, month } = monthParts(monthKey);
+  return `${MONTHS[month - 1]} ${year}`;
+}
+function monthFileName(monthKey = selectedMonth.value) {
+  const { year, month } = monthParts(monthKey);
+  return `${MONTHS[month - 1]}_${year}.json`;
+}
+function monthFileUrl(monthKey = selectedMonth.value) {
+  return `https://api.github.com/repos/${OWNER}/${REPO}/contents/${monthFileName(monthKey)}`;
+}
+function updateMonthUI() {
+  document.getElementById('monthPicker').value = selectedMonth.value;
+  document.getElementById('currentMonthLabel').textContent = monthLabel();
+}
+function setMonthStatus(message, state = 'missing') {
+  const status = document.getElementById('monthStatus');
+  status.dataset.state = state;
+  document.getElementById('monthStatusText').textContent = message;
+  status.hidden = false;
+}
+function clearMonthStatus() {
+  const status = document.getElementById('monthStatus');
+  status.hidden = true;
+  delete status.dataset.state;
+}
+
 selectPay('cash');
 
 async function load() {
+  const requestId = ++loadRequestId;
+  const requestedMonth = selectedMonth.value;
+  const fileName = monthFileName(requestedMonth);
   setSaving(true);
   try {
-    const url = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${FILE}`;
-    const res = await fetch(url, { headers: headers() });
-
+    const res = await fetch(monthFileUrl(requestedMonth), { headers: headers() });
+    if (requestId !== loadRequestId || requestedMonth !== selectedMonth.value) return;
     if (res.status === 404) {
       expenses = [];
-      sha = null;
+      shaByMonth.delete(requestedMonth);
       render();
+      setMonthStatus(`No file found for ${monthLabel(requestedMonth)} (${fileName}). Select “New month” to create it.`, 'missing');
       return;
     }
     if (!res.ok) throw new Error(res.status);
-
     const data = await res.json();
-    sha = data.sha;
+    if (requestId !== loadRequestId || requestedMonth !== selectedMonth.value) return;
+    shaByMonth.set(requestedMonth, data.sha);
     expenses = normalizeExpenses(JSON.parse(dec(data.content)));
+    clearMonthStatus();
     render();
   } catch (e) {
-    showToast('Load failed: ' + e.message, 'error');
+    if (requestId === loadRequestId && requestedMonth === selectedMonth.value) {
+      setMonthStatus(`Could not load ${fileName}. ${e.message}`, 'error');
+      showToast('Load failed: ' + e.message, 'error');
+    }
   } finally {
-    setSaving(false);
+    if (requestId === loadRequestId) setSaving(false);
   }
 }
 
 async function save(msg) {
   setSaving(true);
-  const url = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${FILE}`;
+  const targetMonth = selectedMonth.value;
   const body = {
-    message: msg,
+    message: `${monthLabel(targetMonth)}: ${msg}`,
     content: enc(JSON.stringify(expenses, null, 2))
   };
-  if (sha) body.sha = sha;
-
+  const currentSha = shaByMonth.get(targetMonth);
+  if (currentSha) body.sha = currentSha;
   try {
-    const res = await fetch(url, {
-      method: 'PUT',
-      headers: headers(),
-      body: JSON.stringify(body)
+    const res = await fetch(monthFileUrl(targetMonth), {
+      method: 'PUT', headers: headers(), body: JSON.stringify(body)
     });
     const data = await res.json();
-
     if (!res.ok) {
       if (res.status === 409 || res.status === 422) {
-        await load();
+        if (selectedMonth.value === targetMonth) await load();
         return;
       }
       throw new Error(data.message || res.status);
     }
-
-    sha = data.content.sha;
-    render();
-    showToast('Saved ✓');
+    shaByMonth.set(targetMonth, data.content.sha);
+    if (selectedMonth.value === targetMonth) render();
+    showToast(`Saved ${monthLabel(targetMonth)} ✓`);
   } catch (e) {
     showToast('Save failed: ' + e.message, 'error');
   } finally {
@@ -1058,6 +1132,46 @@ async function save(msg) {
   }
 }
 
+async function createMonth() {
+  const targetMonth = selectedMonth.value;
+  const fileName = monthFileName(targetMonth);
+  setSaving(true);
+  try {
+    const check = await fetch(monthFileUrl(targetMonth), { headers: headers() });
+    if (check.ok) {
+      if (selectedMonth.value === targetMonth) await load();
+      showToast(`${monthLabel(targetMonth)} already exists`, 'error');
+      return;
+    }
+    if (check.status !== 404) throw new Error(check.status);
+    const res = await fetch(monthFileUrl(targetMonth), {
+      method: 'PUT',
+      headers: headers(),
+      body: JSON.stringify({ message: `Create expense ledger: ${monthLabel(targetMonth)}`, content: enc('[]') })
+    });
+    const data = await res.json();
+    if (!res.ok) {
+      if (res.status === 409 || res.status === 422) {
+        if (selectedMonth.value === targetMonth) await load();
+        showToast(`${monthLabel(targetMonth)} already exists`, 'error');
+        return;
+      }
+      throw new Error(data.message || res.status);
+    }
+    shaByMonth.set(targetMonth, data.content.sha);
+    if (selectedMonth.value === targetMonth) {
+      expenses = [];
+      clearMonthStatus();
+      render();
+    }
+    showToast(`Created ${monthLabel(targetMonth)} ✓`);
+  } catch (e) {
+    if (selectedMonth.value === targetMonth) setMonthStatus(`Could not create ${fileName}. ${e.message}`, 'error');
+    showToast('Create failed: ' + e.message, 'error');
+  } finally {
+    setSaving(false);
+  }
+}
 function updateSummary() {
   const total = expenses.reduce((s, e) => s + Number(e.amount), 0);
   const cash  = expenses.filter(e => e.method === 'cash').reduce((s, e) => s + Number(e.amount), 0);
@@ -1223,8 +1337,18 @@ async function deleteExp(idx) {
   await save('Delete expense: ' + exp.description);
 }
 
-
-
+document.getElementById('monthPicker').addEventListener('change', event => {
+  if (!event.target.value) return;
+  selectedMonth.value = event.target.value;
+  expenses = [];
+  updateMonthUI();
+  clearMonthStatus();
+  render();
+  load();
+});
+document.getElementById('newMonthBtn').addEventListener('click', createMonth);
+selectedMonth.value = getCurrentMonthKey();
+updateMonthUI();
 load();
 </script>
 </body>
