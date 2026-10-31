@@ -6,7 +6,7 @@
 <title>KRD's Expense Tracker</title>
 <style>
 :root {
-  --font-ui: 'Comic Sans MS', 'Comic Sans', 'Comic Neue', 'Chalkboard SE', cursive;
+    --font-ui: Arial, Helvetica, sans-serif;
   --bg: #07111f;
   --surface: rgba(255,255,255,0.05);
   --surface2: rgba(255,255,255,0.09);
@@ -849,7 +849,169 @@ button, input, textarea, select { font-family: var(--font-ui); }
   .month-input { font-size: 12px; }
   .new-month-btn { min-height: 38px; padding: 0 8px; font-size: 11px; }
   .month-status { margin: 0 12px 14px; }
-}</style>
+}
+/* ── SEVEN DARK THEMES ── */
+:root {
+  --theme-glow-a: rgba(74,163,255,0.26);
+  --theme-glow-b: rgba(47,128,237,0.20);
+  --theme-glow-c: rgba(103,196,255,0.09);
+  --theme-dot: rgba(105,177,255,0.12);
+  --theme-header: rgba(7,17,31,0.97);
+  --theme-card-surface: linear-gradient(145deg, rgba(21,47,79,0.76), rgba(10,27,49,0.68));
+  --theme-add-surface: linear-gradient(145deg, rgba(15,39,70,0.88), rgba(9,25,46,0.84));
+  --theme-row-surface: linear-gradient(145deg, rgba(18,42,72,0.78), rgba(9,25,45,0.78));
+  --theme-done-surface: rgba(12,25,42,0.72);
+  --theme-field-focus: rgba(25,63,103,0.82);
+  --theme-button: linear-gradient(135deg, #8bd0ff 0%, #4aa3ff 52%, #2563eb 100%);
+  --theme-button-text: #061526;
+  --theme-shadow: rgba(55,140,230,0.27);
+  --theme-focus: rgba(74,163,255,0.22);
+  --theme-toast: rgba(7,17,31,0.96);
+  --theme-status: rgba(44,116,190,0.16);
+  --theme-title-text: #f2f8ff;
+}
+
+:root[data-theme="teal"] {
+  --bg: #061719; --glass: rgba(12,37,38,0.78); --glass2: rgba(16,49,50,0.88);
+  --border: rgba(88,211,201,0.17); --border2: rgba(88,211,201,0.31);
+  --text: #eafffc; --text2: #a8dfdb; --muted: #739d99;
+  --accent: #64d9cf; --accent2: #2aa69b; --blue-glow: rgba(57,196,184,0.22); --blue-glow2: rgba(57,196,184,0.10);
+  --green: #64d9cf; --green2: #2aa69b;
+  --theme-glow-a: rgba(42,185,175,0.25); --theme-glow-b: rgba(21,117,112,0.19); --theme-glow-c: rgba(105,231,221,0.08);
+  --theme-dot: rgba(108,222,212,0.11); --theme-header: rgba(6,23,25,0.97);
+  --theme-card-surface: linear-gradient(145deg, rgba(17,56,57,0.85), rgba(8,31,33,0.90));
+  --theme-add-surface: linear-gradient(145deg, rgba(17,59,59,0.94), rgba(8,32,34,0.94));
+  --theme-row-surface: linear-gradient(145deg, rgba(15,49,50,0.88), rgba(7,28,30,0.91));
+  --theme-done-surface: rgba(8,27,29,0.82); --theme-field-focus: rgba(16,62,63,0.90);
+  --theme-button: linear-gradient(135deg, #9bf0e8, #4ac8be 58%, #218b84); --theme-button-text: #062321;
+  --theme-shadow: rgba(42,185,175,0.24); --theme-focus: rgba(88,211,201,0.21);
+  --theme-toast: rgba(8,25,27,0.97); --theme-status: rgba(30,126,121,0.18); --theme-title-text: #f0fffd;
+}
+
+:root[data-theme="emerald"] {
+  --bg: #07150f; --glass: rgba(12,37,26,0.77); --glass2: rgba(16,49,34,0.88);
+  --border: rgba(92,214,157,0.17); --border2: rgba(92,214,157,0.31);
+  --text: #e9fff4; --text2: #a9dfc1; --muted: #719b84;
+  --accent: #69dfa5; --accent2: #2cae75; --blue-glow: rgba(69,205,139,0.22); --blue-glow2: rgba(69,205,139,0.11);
+  --green: #69dfa5; --green2: #2cae75;
+  --theme-glow-a: rgba(56,194,125,0.25); --theme-glow-b: rgba(27,126,82,0.19); --theme-glow-c: rgba(111,237,172,0.08);
+  --theme-dot: rgba(104,220,159,0.11); --theme-header: rgba(7,21,15,0.97);
+  --theme-card-surface: linear-gradient(145deg, rgba(17,55,38,0.84), rgba(9,31,22,0.87));
+  --theme-add-surface: linear-gradient(145deg, rgba(17,58,39,0.93), rgba(8,32,22,0.94));
+  --theme-row-surface: linear-gradient(145deg, rgba(15,48,34,0.86), rgba(8,28,20,0.90));
+  --theme-done-surface: rgba(9,28,20,0.8); --theme-field-focus: rgba(16,60,41,0.9);
+  --theme-button: linear-gradient(135deg, #8bf0bd, #42c78b 58%, #168b5a); --theme-button-text: #062115;
+  --theme-shadow: rgba(56,194,125,0.24); --theme-focus: rgba(73,208,142,0.21);
+  --theme-toast: rgba(8,25,18,0.97); --theme-status: rgba(34,133,87,0.18); --theme-title-text: #effff6;
+}
+
+:root[data-theme="violet"] {
+  --bg: #15091d; --glass: rgba(39,17,54,0.78); --glass2: rgba(52,23,70,0.89);
+  --border: rgba(206,126,255,0.18); --border2: rgba(206,126,255,0.33);
+  --text: #fcf1ff; --text2: #e2bdf3; --muted: #aa82bd;
+  --accent: #d08cff; --accent2: #a344d2; --blue-glow: rgba(173,67,221,0.24); --blue-glow2: rgba(173,67,221,0.11);
+  --green: #d08cff; --green2: #a344d2;
+  --theme-glow-a: rgba(174,55,216,0.27); --theme-glow-b: rgba(105,27,137,0.20); --theme-glow-c: rgba(224,133,255,0.08);
+  --theme-dot: rgba(215,137,245,0.12); --theme-header: rgba(21,9,29,0.97);
+  --theme-card-surface: linear-gradient(145deg, rgba(60,29,78,0.86), rgba(30,14,41,0.90));
+  --theme-add-surface: linear-gradient(145deg, rgba(63,29,83,0.95), rgba(31,14,43,0.94));
+  --theme-row-surface: linear-gradient(145deg, rgba(52,24,69,0.88), rgba(27,13,38,0.91));
+  --theme-done-surface: rgba(27,13,37,0.82); --theme-field-focus: rgba(64,29,83,0.90);
+  --theme-button: linear-gradient(135deg, #ecc4ff, #c16bea 58%, #853cb1); --theme-button-text: #260c34;
+  --theme-shadow: rgba(174,55,216,0.25); --theme-focus: rgba(206,126,255,0.22);
+  --theme-toast: rgba(27,12,37,0.97); --theme-status: rgba(118,38,151,0.19); --theme-title-text: #fff6ff;
+}
+
+:root[data-theme="indigo"] {
+  --bg: #0c0c20; --glass: rgba(25,24,58,0.78); --glass2: rgba(34,32,75,0.89);
+  --border: rgba(151,151,255,0.18); --border2: rgba(151,151,255,0.32);
+  --text: #f3f2ff; --text2: #c9c6f0; --muted: #9290bd;
+  --accent: #a9a6ff; --accent2: #7470dc; --blue-glow: rgba(113,108,223,0.23); --blue-glow2: rgba(113,108,223,0.10);
+  --green: #a9a6ff; --green2: #7470dc;
+  --theme-glow-a: rgba(105,91,222,0.26); --theme-glow-b: rgba(62,48,151,0.20); --theme-glow-c: rgba(166,157,255,0.08);
+  --theme-dot: rgba(168,161,255,0.11); --theme-header: rgba(12,12,32,0.97);
+  --theme-card-surface: linear-gradient(145deg, rgba(38,36,84,0.86), rgba(20,19,49,0.90));
+  --theme-add-surface: linear-gradient(145deg, rgba(40,37,90,0.94), rgba(21,19,52,0.94));
+  --theme-row-surface: linear-gradient(145deg, rgba(34,32,76,0.88), rgba(18,17,44,0.91));
+  --theme-done-surface: rgba(18,17,43,0.82); --theme-field-focus: rgba(42,39,91,0.90);
+  --theme-button: linear-gradient(135deg, #d0ceff, #918beb 58%, #5a55ba); --theme-button-text: #151331;
+  --theme-shadow: rgba(105,91,222,0.25); --theme-focus: rgba(151,151,255,0.22);
+  --theme-toast: rgba(19,18,47,0.97); --theme-status: rgba(72,66,156,0.19); --theme-title-text: #f8f7ff;
+}
+
+:root[data-theme="ruby"] {
+  --bg: #190910; --glass: rgba(48,17,30,0.78); --glass2: rgba(64,22,39,0.89);
+  --border: rgba(255,112,140,0.17); --border2: rgba(255,112,140,0.31);
+  --text: #fff1f4; --text2: #e9b7c3; --muted: #b17f8d;
+  --accent: #ff839f; --accent2: #cf4567; --blue-glow: rgba(220,59,96,0.23); --blue-glow2: rgba(220,59,96,0.10);
+  --green: #ff839f; --green2: #cf4567;
+  --theme-glow-a: rgba(208,43,82,0.26); --theme-glow-b: rgba(122,28,51,0.20); --theme-glow-c: rgba(255,125,151,0.08);
+  --theme-dot: rgba(255,130,156,0.11); --theme-header: rgba(25,9,16,0.97);
+  --theme-card-surface: linear-gradient(145deg, rgba(70,29,44,0.86), rgba(36,14,23,0.90));
+  --theme-add-surface: linear-gradient(145deg, rgba(75,28,45,0.94), rgba(38,14,24,0.94));
+  --theme-row-surface: linear-gradient(145deg, rgba(60,23,38,0.88), rgba(32,12,21,0.91));
+  --theme-done-surface: rgba(31,12,20,0.82); --theme-field-focus: rgba(79,28,47,0.90);
+  --theme-button: linear-gradient(135deg, #ffc0cf, #e76584 58%, #aa3453); --theme-button-text: #2c0d16;
+  --theme-shadow: rgba(208,43,82,0.25); --theme-focus: rgba(255,112,140,0.21);
+  --theme-toast: rgba(32,11,20,0.97); --theme-status: rgba(132,36,60,0.20); --theme-title-text: #fff5f7;
+}
+
+:root[data-theme="amber"] {
+  --bg: #171108; --glass: rgba(45,32,15,0.78); --glass2: rgba(61,43,19,0.89);
+  --border: rgba(237,181,91,0.17); --border2: rgba(237,181,91,0.31);
+  --text: #fff7e8; --text2: #e4c99a; --muted: #b09a70;
+  --accent: #f1c16e; --accent2: #c28a37; --blue-glow: rgba(206,143,49,0.22); --blue-glow2: rgba(206,143,49,0.10);
+  --green: #f1c16e; --green2: #c28a37;
+  --theme-glow-a: rgba(194,124,28,0.25); --theme-glow-b: rgba(115,70,15,0.20); --theme-glow-c: rgba(245,194,112,0.08);
+  --theme-dot: rgba(234,187,105,0.11); --theme-header: rgba(23,17,8,0.97);
+  --theme-card-surface: linear-gradient(145deg, rgba(67,49,23,0.87), rgba(36,26,12,0.91));
+  --theme-add-surface: linear-gradient(145deg, rgba(72,51,23,0.95), rgba(38,27,12,0.94));
+  --theme-row-surface: linear-gradient(145deg, rgba(57,41,19,0.89), rgba(32,23,11,0.92));
+  --theme-done-surface: rgba(30,22,11,0.83); --theme-field-focus: rgba(76,53,23,0.90);
+  --theme-button: linear-gradient(135deg, #f9dda2, #d9a44e 58%, #956224); --theme-button-text: #2a1a08;
+  --theme-shadow: rgba(194,124,28,0.25); --theme-focus: rgba(237,181,91,0.21);
+  --theme-toast: rgba(30,22,10,0.97); --theme-status: rgba(133,88,24,0.20); --theme-title-text: #fff9ee;
+}
+
+body { background-image: linear-gradient(160deg, var(--theme-glow-c), transparent 44%); }
+body::before {
+  background: radial-gradient(ellipse 70% 50% at 10% -10%, var(--theme-glow-a) 0%, transparent 60%),
+              radial-gradient(ellipse 60% 45% at 90% 100%, var(--theme-glow-b) 0%, transparent 55%),
+              radial-gradient(ellipse 50% 40% at 50% 50%, var(--theme-glow-c) 0%, transparent 70%);
+}
+body::after { background: radial-gradient(circle, var(--theme-dot) 0.9px, transparent 1px); background-size: 24px 24px; }
+.header { background: linear-gradient(to bottom, var(--theme-header) 75%, transparent); }
+.logo-dot { background: var(--theme-button); box-shadow: 0 6px 24px var(--theme-shadow), 0 0 0 1px rgba(255,255,255,0.12); }
+.app-name { display: inline-block; background: none; color: var(--theme-title-text); -webkit-text-fill-color: var(--theme-title-text); -webkit-background-clip: initial; background-clip: border-box; text-shadow: 0 1px 12px var(--theme-glow-a); }
+.sum-card { background: var(--theme-card-surface); }
+.add-card { background: var(--theme-add-surface); }
+.expense-item { background: var(--theme-row-surface); }
+.expense-item.done { background: var(--theme-done-surface); border-color: var(--border); }
+.add-btn, .new-month-btn { color: var(--theme-button-text); background: var(--theme-button); box-shadow: 0 7px 24px var(--theme-shadow), inset 0 1px 0 rgba(255,255,255,0.3); }
+.sum-card, .add-card, .expense-item { border-color: var(--border2); }
+.expense-item:hover { border-color: var(--accent); box-shadow: 0 8px 30px rgba(0,0,0,0.22), 0 0 20px var(--theme-glow-a), inset 0 1px 0 rgba(255,255,255,0.10); }
+.expense-item.editing { background: var(--theme-add-surface); border-color: var(--accent); box-shadow: 0 0 0 2px var(--theme-focus), 0 12px 36px rgba(0,0,0,0.28); }
+.field-input:focus, .edit-desc:focus, .edit-amount:focus { border-color: var(--accent); background: var(--theme-field-focus); box-shadow: 0 0 0 3px var(--theme-focus), 0 4px 18px rgba(0,0,0,0.16); }
+.sum-value.total, .list-title { color: var(--accent); }
+.sum-value.total { text-shadow: 0 0 16px var(--theme-glow-a); }
+.empty-icon { filter: drop-shadow(0 0 16px var(--theme-glow-a)); }
+.month-input-wrap { background: rgba(255,255,255,0.045); }
+.month-input { color-scheme: dark; }
+.month-status[data-state="missing"] { color: var(--text); background: var(--theme-status); border-color: var(--border2); }
+.toast { color: var(--text); background: var(--theme-toast); }
+.toast.success { color: var(--accent); border-color: var(--border2); box-shadow: 0 8px 32px rgba(0,0,0,0.22), 0 0 22px var(--theme-glow-a); }
+.saving-bar { background: linear-gradient(90deg, var(--accent2), var(--accent), #ffffff, var(--accent)); }
+.icon-btn.edit:hover { background: var(--blue-glow2); border-color: var(--border2); box-shadow: 0 0 14px var(--blue-glow); }
+.theme-toolbar { display: flex; align-items: center; justify-content: flex-end; gap: 9px; color: var(--text2); font-size: 12px; }
+.theme-cycle-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 38px; min-width: 124px; padding: 0 12px; color: var(--text); background: var(--glass2); border: 1px solid var(--border2); border-radius: 11px; font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; box-shadow: 0 4px 14px rgba(0,0,0,0.24), inset 0 1px 0 rgba(255,255,255,0.08); }
+.theme-cycle-btn span:first-child { color: var(--accent); font-size: 16px; }
+.theme-cycle-btn:hover { border-color: var(--accent); box-shadow: 0 0 18px var(--theme-glow-a); }
+.theme-cycle-btn:active { transform: scale(0.97); }
+.theme-cycle-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }.logo-row { width: 100%; min-width: 0; }
+.app-name { flex: 1; min-width: 0; }
+.theme-cycle-btn { width: 38px; height: 38px; min-width: 38px; min-height: 38px; padding: 0; margin-left: auto; border-radius: 12px; }
+.theme-cycle-btn .theme-icon { width: 19px; height: 19px; fill: none; stroke: var(--accent); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.theme-cycle-btn .theme-icon circle { fill: var(--accent); stroke: none; }</style>
 </head>
 <body>
 
@@ -862,6 +1024,12 @@ button, input, textarea, select { font-family: var(--font-ui); }
       <div class="logo-row">
         <div class="logo-dot">💸</div>
         <span class="app-name">KRD's Expenses</span>
+        <button class="theme-cycle-btn" id="themeCycleBtn" type="button" aria-label="Current theme Ocean. Click to change theme." title="Change theme">
+          <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3a9 9 0 1 0 0 18h1.1a2.3 2.3 0 0 0 1.5-4 1.7 1.7 0 0 1 1.1-3h1.1A3.2 3.2 0 0 0 20 10.8 8.8 8.8 0 0 0 12 3Z" />
+            <circle cx="7.5" cy="11" r="1" /><circle cx="10.5" cy="7.5" r="1" /><circle cx="15" cy="8" r="1" />
+          </svg>
+        </button>
       </div>
       <div class="month-toolbar">
         <span class="month-label" id="currentMonthLabel"></span>
@@ -871,6 +1039,7 @@ button, input, textarea, select { font-family: var(--font-ui); }
         </label>
         <button class="new-month-btn" id="newMonthBtn" type="button">＋ New month</button>
       </div>
+
     </div>
   </div>
 
@@ -973,6 +1142,30 @@ let expenses = [];
 const shaByMonth = new Map();
 let loadRequestId = 0;
 const selectedMonth = { value: '' };
+const THEME_KEY = 'krd-expense-tracker-theme';
+const AVAILABLE_THEMES = ['ocean', 'emerald', 'teal', 'violet', 'indigo', 'ruby', 'amber'];
+const THEME_LABELS = { ocean: 'Ocean', emerald: 'Emerald', teal: 'Teal', violet: 'Violet', indigo: 'Indigo', ruby: 'Ruby', amber: 'Amber' };
+function applyTheme(theme, persist = true) {
+  const selected = AVAILABLE_THEMES.includes(theme) ? theme : 'ocean';
+  document.documentElement.dataset.theme = selected;
+  const button = document.getElementById('themeCycleBtn');
+  if (button) {
+    const description = `Current theme ${THEME_LABELS[selected]}. Click to change theme.`;
+    button.setAttribute('aria-label', description);
+    button.title = description;
+  }
+  if (persist) {
+    try { localStorage.setItem(THEME_KEY, selected); } catch (_) {}
+  }
+}
+function cycleTheme() {
+  const current = document.documentElement.dataset.theme;
+  const index = AVAILABLE_THEMES.indexOf(current);
+  applyTheme(AVAILABLE_THEMES[(index + 1) % AVAILABLE_THEMES.length]);
+}
+function loadSavedTheme() {
+  try { return localStorage.getItem(THEME_KEY) || 'ocean'; } catch (_) { return 'ocean'; }
+}
 let selectedPay = 'cash';
 
 function enc(str) { return btoa(unescape(encodeURIComponent(str))); }
@@ -1347,6 +1540,8 @@ document.getElementById('monthPicker').addEventListener('change', event => {
   load();
 });
 document.getElementById('newMonthBtn').addEventListener('click', createMonth);
+document.getElementById('themeCycleBtn').addEventListener('click', cycleTheme);
+applyTheme(loadSavedTheme(), false);
 selectedMonth.value = getCurrentMonthKey();
 updateMonthUI();
 load();
