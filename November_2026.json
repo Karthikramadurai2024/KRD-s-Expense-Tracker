@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": 1793472397571.5952,
+    "description": "1",
+    "amount": 1,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-10-31T18:46:37.563Z"
+  }
+]
