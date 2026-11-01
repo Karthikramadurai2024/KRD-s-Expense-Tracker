@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": 1793524905091.9485,
+    "description": "Diwali Purchase",
+    "amount": 3110,
+    "method": "gpay",
+    "done": false,
+    "created_at": "2026-11-01T09:21:45.082Z"
+  }
+]
