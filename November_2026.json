@@ -38,5 +38,13 @@
     "method": "cash",
     "done": false,
     "created_at": "2026-11-01T12:42:16.096Z"
+  },
+  {
+    "id": 1793536941020.9119,
+    "description": "Puffs",
+    "amount": 30,
+    "method": "cash",
+    "done": false,
+    "created_at": "2026-11-01T12:42:21.019Z"
   }
 ]
