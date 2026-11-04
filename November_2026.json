@@ -4,7 +4,7 @@
     "description": "Diwali Purchase",
     "amount": 3110,
     "method": "gpay",
-    "done": false,
+    "done": true,
     "created_at": "2026-11-01T09:21:45.082Z"
   },
   {
