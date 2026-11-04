@@ -28,7 +28,7 @@
     "description": "Parking",
     "amount": 6,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-11-01T11:15:32.278Z"
   },
   {
