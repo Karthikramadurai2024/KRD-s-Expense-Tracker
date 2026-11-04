@@ -44,7 +44,7 @@
     "description": "Puffs",
     "amount": 30,
     "method": "cash",
-    "done": false,
+    "done": true,
     "created_at": "2026-11-01T12:42:21.019Z"
   },
   {
