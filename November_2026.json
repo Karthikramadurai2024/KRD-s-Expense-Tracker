@@ -102,5 +102,13 @@
     "method": "cash",
     "done": true,
     "created_at": "2026-11-04T14:45:41.411Z"
+  },
+  {
+    "id": 1793883318297.5024,
+    "description": "Ammu Salary",
+    "amount": 15000,
+    "method": "gpay",
+    "done": false,
+    "created_at": "2026-11-05T12:55:18.294Z"
   }
 ]
